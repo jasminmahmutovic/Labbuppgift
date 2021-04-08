@@ -1,0 +1,369 @@
+/* Removed all the standard margins and paddings */
+
+* {
+    margin:0;
+    padding:0;
+}
+
+
+/* Styling of the navbar */
+
+nav {
+    width:100%;
+    height:50px;
+    background: rgb(70,21,87);
+    background: linear-gradient(90deg, rgba(70,21,87,1) 0%, rgba(66,34,105,1) 35%, rgba(63,24,65,1) 100%);    
+    display: flex;
+    justify-content: center;
+    text-align:center;
+}
+
+nav a {
+    margin-left:1rem;
+    margin-top:1rem;
+    margin-right:1rem;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color:yellow;
+}
+
+/* Styling of the home aka first section */
+
+.home {
+    margin:0;
+    display:flex;
+    position:relative;
+}
+
+/* Styling of the image and the fade surrounding it */
+
+.home img {
+    width:100%;
+    height:100vh;
+    object-fit:cover;
+    object-position:left;
+    z-index:-2;
+    position:absolute;
+}
+
+.home-fade {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 99vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index:-1;
+}
+
+/* Styling of h1 and p in the first section */
+
+.homename {
+    margin-top:11rem;
+    padding-right:4rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.homename h1, p {   
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    z-index:1;
+}
+
+.homename h1 {
+    font-size:25px;
+}
+
+.homename p {
+    margin-top:0.5rem;
+    font-size:15px;
+    border-bottom:rgba(211, 211, 211, 0.26) solid 0.5px;
+    font-style:italic;
+}
+
+/* A divider that seperates the different sections */
+.divider {
+    margin-top:15rem;
+    width:100%;
+    height:1px;
+    background:white;
+}
+
+/* Styling of the about section aka section 2 */
+
+.about {
+    width:100%;
+    height:600px;
+    position: relative;
+}
+
+/* Styling of the image and the fade surrounding it */
+
+.about-fade {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 599px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index:-1;
+}
+
+
+.about img {
+    width:100%;
+    height:600px;
+    object-fit:cover;
+    object-position: left;
+    position: absolute;
+    z-index:-2;
+}
+
+/* Styling of the h2 tag */
+
+.about h2  {
+    margin-left:6rem;
+    padding-top:2rem;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    z-index:2;
+}
+
+/* Styling of the h4 tag */
+
+.about h4 {
+    margin-left:2rem;
+    padding-top:2rem;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    z-index:2;
+    font-style: italic;
+}
+
+/* Styling of the P-tag */
+
+.about p {
+    margin-left:3.5rem;
+    width: 225px;
+    color:White;
+    z-index:2;
+}
+
+/* A list about my experiences */
+
+.about li {
+    margin-left:2rem;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    list-style:none;
+}
+
+/* Styling of the first set of icons and h5 tag */
+
+.icons-1 {
+    margin-top:2rem;
+    margin-left:5rem;
+    color:white;
+    text-decoration: none;
+    font-size:15px;
+}
+
+.icons-1 h5 {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+.icons-1 i {
+    color:yellow;
+    font-size:30px;
+    padding-top:15px;
+    padding-left:35px;
+}
+
+/* Styling of the second divider */
+
+.divider-2 {
+    width:100%;
+    height:1px;
+    background:white;
+}
+
+/* Styling of the contact information */
+
+.contact {
+    width:100%;
+    height:50px;
+    background: rgb(70,21,87);
+    background: linear-gradient(90deg, rgba(70,21,87,1) 0%, rgba(66,34,105,1) 35%, rgba(63,24,65,1) 100%); 
+    font-size:15px;
+}
+
+.contact h4 {
+    padding-top:5px;
+    margin-left:1rem;
+    font-family: 'Roboto', sans-serif;
+    color:rgba(255, 255, 255, 0.287);
+    font-size:13px;
+    font-style:oblique;
+}
+
+/* Styling of icons in the footer */
+
+.icons-2 {
+    margin-left:8rem;
+    font-size:25px;
+}
+
+.icons-2 a {
+    padding-left:10px;
+    color:rgba(255, 255, 255, 0.287);
+    text-decoration: none;
+}
+
+.icons-2 a:hover {
+    color:yellow;
+}
+
+/* Making the site responsive on different devices */
+
+@media only screen and (max-width: 600px) {
+    .homename {
+        margin-left:4rem;
+    }
+
+}
+
+@media only screen and (min-width: 700px) {
+    nav {
+        height:70px;
+        font-size:25px;
+    }
+    .home {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about {
+        display:flex;
+        flex:1;
+        font-size:20px;
+    }
+    
+    .about h2 {
+        margin-left:3.5rem;
+        margin-bottom:1rem;
+    }
+
+    .list {
+        margin-left:5rem;
+    }
+
+    .list h4 {
+        font-size:25px;
+    }
+
+.icons-2 {
+    margin-left: 30rem;
+}
+
+@media only screen and (min-width: 1024px) {
+    .icons-1 {
+        margin-top:15rem;
+        font-size:30px;
+    }
+
+    .contact {
+        height:200px;
+    }
+
+    .contact h4 {
+        font-size:25px;
+    }
+    
+    .icons-2 {
+        margin-top:5rem;
+        font-size:50px;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .home,
+    .home img,
+    .home-fade {
+            height:900px;
+        }
+    .homename {
+        margin-top:-15rem;
+        margin-left:2rem;
+    }
+
+    .homename h1 {
+        font-size:35px;
+    }
+
+    .homename p {
+        font-size:15px;
+    }
+
+    .home img,
+    .home-fade {
+        height:900px;
+    }
+
+    .divider,
+    .divider-2 {
+        height:1px;
+        margin-top:0;
+    }
+
+    .about, 
+    .about img,
+    .about-fade {
+        height:900px;
+    }
+
+    .about h2 {
+        font-size:35px;
+    }
+
+    .list {
+        margin-left:55rem;
+        margin-top:5rem;
+    }
+    
+    .list li {
+        padding-top:2rem;
+        border-bottom:rgba(255, 255, 255, 0.212) 0.5px solid;
+    }
+
+    .icons-1 h5 {
+        font-size:25px;
+    }
+
+    .icons-1 i {
+        font-size:50px;
+        padding-left:4rem;
+    }
+
+    .contact {
+        height:100px;
+    }
+
+    .contact h4 {
+        padding-top:10px;
+        margin-left:15rem;
+    }
+
+    .icons-2 {
+        margin-top:0;
+        margin-left:50rem;
+    }
+}
