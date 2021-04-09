@@ -5,6 +5,12 @@
     padding:0;
 }
 
+/* Makes the scrolling smooth */
+
+html {
+    scroll-behavior: smooth;
+  }
+
 
 /* Styling of the navbar */
 
